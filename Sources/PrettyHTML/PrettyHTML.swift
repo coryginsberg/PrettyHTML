@@ -3,16 +3,16 @@
 // Licensed under Apache License 2.0
 //
 
-// import html2md
+import CxxStdlib
+import html2md
 import SwiftSoup
-import UIKit
 
 public struct PrettyHTML {
 //  let baseFontSize: CGFloat = 16
 //  html2md.
-  public init() {
-//    html2md.convert("")
-//    html2md.convert("")
+  public init(fromHTML html: inout std.string) {
+    let boolPointer = UnsafeMutablePointer<Bool>(bitPattern: 0)
+    html2md.Convert(&html, boolPointer)
   }
 
 //  public mutating func attributedString(from string: String) -> NSAttributedString {

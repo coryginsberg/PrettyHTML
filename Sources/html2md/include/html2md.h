@@ -7,6 +7,7 @@
 #include <memory>
 #include <string>
 #include <unordered_map>
+#include "table.h"
 
 /*!
  * \brief html2md namespace

@@ -1,8 +1,8 @@
 // Copyright (c) Tim Gromeyer
 // Licensed under the MIT License - https://opensource.org/licenses/MIT
 
-#include "html2md.h"
-#include "table.h"
+#include "include/html2md.h"
+#include "include/table.h"
 
 #include <algorithm>
 #include <cstring>

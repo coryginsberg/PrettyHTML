@@ -6,6 +6,7 @@ import PackageDescription
 let package = Package(
   name: "PrettyHTML",
   platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .macCatalyst(.v13)],
+
   products: [
     .library(
       name: "PrettyHTML",
@@ -23,9 +24,11 @@ let package = Package(
       ],
       swiftSettings: [.interoperabilityMode(.Cxx)]
     ),
+    .target(name: "html2md"),
     .testTarget(
       name: "PrettyHTMLTests",
       dependencies: ["PrettyHTML"]
     ),
-  ]
+  ],
+  cxxLanguageStandard: .gnucxx11
 )
